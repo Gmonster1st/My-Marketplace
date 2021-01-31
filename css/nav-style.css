@@ -1,0 +1,36 @@
+nav div {
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	background: white;
+}
+
+#navbar-title {
+	font-family: var(--font-family);
+	font-size: var(--font-large);
+	color: var(--header-title-color);
+	margin-right: 1rem;
+}
+
+nav img {
+	height: 2rem;
+}
+
+nav img:active {
+	--scale-size: 1.5;
+	transform: scale3d(var(--scale-size), var(--scale-size), var(--scale-size));
+	-webkit-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+	-ms-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+}
+
+#cart-icon {
+	float: right;
+}

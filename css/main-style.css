@@ -1,0 +1,163 @@
+:root {
+	margin: 0;
+	padding: 0;
+	display: grid;
+}
+
+body {
+	margin: 0;
+	padding: 5px;
+}
+
+#float-menu {
+	background-image: linear-gradient(
+		var(--project-pink),
+		var(--project-yellow)
+	);
+	position: absolute;
+	right: 1%;
+	z-index: 2;
+	padding: 0;
+	transition: top 0.5s;
+	border-radius: 0 5px 5px 5px;
+	outline: unset;
+}
+
+#float-search {
+	/* background-image: linear-gradient(
+		var(--project-pink),
+		var(--project-yellow)
+	); */
+	position: fixed;
+	left: 20%;
+	z-index: 2;
+	padding: 0;
+	transition: top 0.5s;
+	border: 2px solid var(--project-skyBlue);
+	padding: 0;
+	/* border-radius: 0 5px 5px 5px; */
+}
+
+#float-search span,
+#float-search input,
+#float-search input:focus {
+	font-size: var(--font-small);
+	height: 1.5em;
+	border: unset;
+	outline: unset;
+	border-radius: unset;
+}
+
+#float-search span {
+	padding: 0;
+	margin: 0;
+}
+
+#float-search svg {
+	background-color: var(--project-gray);
+	vertical-align: bottom;
+}
+
+#float-search svg:active {
+	transition: 0.5s;
+	background-color: white;
+}
+
+#float-menu ul {
+	cursor: default;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#float-menu li {
+	border-radius: 5px;
+	margin: 1em;
+	background-color: white;
+	text-align: center;
+	width: 8em;
+	padding: 0.3em;
+}
+
+nav {
+	right: 1%;
+	width: 98%;
+	position: fixed;
+	margin: auto;
+	padding: 0;
+}
+
+main {
+	margin-top: 4em;
+	margin-bottom: 1em;
+}
+
+#active-listings {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#active-listings li {
+	width: 18rem;
+	color: var(--project-black);
+	font-family: var(--font-family);
+	font-size: var(--font-small);
+	max-height: 12.5rem;
+	border: 1px solid #000;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: center;
+	box-shadow: var(--main-box-shadow);
+	overflow: clip;
+	padding: 0.5em;
+}
+
+#active-listings li:hover {
+	border-color: white;
+}
+
+li:active {
+	--scale-size: 0.9;
+	transform: scale3d(var(--scale-size), var(--scale-size), var(--scale-size));
+	-webkit-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+	-ms-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+}
+
+#active-listings li img {
+	max-width: 100%;
+	max-height: inherit;
+}
+
+footer {
+	border-top: 1px solid black;
+	font-family: var(--font-family);
+	font-size: var(--font-medium);
+	color: var(--header-title-color);
+	bottom: 0;
+	position: fixed;
+	right: 1%;
+	width: 98%;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+
+@media (min-width: 800px) {
+	#active-listings {
+		text-align: left;
+		padding: 1em;
+	}
+	#active-listings li {
+		margin-right: 1em;
+	}
+}
+
+@media (min-width: 1024px) {
+}

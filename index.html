@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/colors.css" />
+		<link rel="stylesheet" href="./css/variables.css" />
+		<link rel="stylesheet" href="./css/main-style.css" />
+		<link rel="stylesheet" href="./css/item-style.css" />
+		<link rel="stylesheet" href="./css/nav-style.css" />
+		<script src="./js/common.js" defer></script>
+		<script src="./js/pubSub.js" defer></script>
+		<script src="./js/model.js" defer></script>
+		<script src="./js/view.js" defer></script>
+		<script src="./js/controller.js" defer></script>
+		<script src="./js/myApp.js" defer></script>
+		<title>My Marketplace</title>
+	</head>
+	<body>
+		<div tabindex="-1" id="float-menu" style="top: -500px">
+			<ul>
+				<li id="newListing">New Listing</li>
+				<li id="editList">Edit a Listing</li>
+				<li id="backToMain">Go Back to Main</li>
+			</ul>
+		</div>
+		<div id="float-search" style="top: -500px">
+			<input type="text" name="search" id="search" /><svg
+				id="search-button"
+				xmlns="http://www.w3.org/2000/svg"
+				width="28.101"
+				height="24.722"
+				viewBox="0 0 28.101 24.722"
+			>
+				<g id="arrow" transform="translate(1.5 2.121)">
+					<line
+						id="Line_4"
+						data-name="Line 4"
+						x1="10"
+						y1="10"
+						transform="translate(14)"
+						fill="none"
+						stroke="#fff"
+						stroke-linecap="round"
+						stroke-width="3"
+					/>
+					<path
+						id="Path_19"
+						data-name="Path 19"
+						d="M10,10,0,0"
+						transform="translate(13.663 19.639) rotate(-86)"
+						fill="none"
+						stroke="#fff"
+						stroke-linecap="round"
+						stroke-width="3"
+					/>
+					<line
+						id="Line_5"
+						data-name="Line 5"
+						x1="21.071"
+						transform="translate(0 10)"
+						fill="none"
+						stroke="#fff"
+						stroke-linecap="round"
+						stroke-width="3"
+					/>
+				</g>
+			</svg>
+		</div>
+		<nav>
+			<div>
+				<span id="navbar-title">My Marketplace</span
+				><span id="search-icon"
+					><img
+						src="./XD Design Mocup/https---shared-assets.adobe.com-link-3f520f6e-c28f-44cd-46ab-4ae74a2b8337/assets/9ba7eaa2-d7ce-4322-804f-0d608c9cbb04.svg"
+						alt=""
+						srcset=""
+				/></span>
+				<span id="cart-icon"
+					><img
+						src="/XD Design Mocup//https---shared-assets.adobe.com-link-3f520f6e-c28f-44cd-46ab-4ae74a2b8337/assets/2637e38a-8206-4d42-a1ab-e118312e8d42.svg"
+						alt=""
+						srcset=""
+				/></span>
+			</div>
+		</nav>
+		<main>
+			<ul id="active-listings">
+				<li id="1">
+					<div>Lorem ipsum dolor sit amet consectetur.</div>
+					<img
+						src="./assets/Icons/frame-landscape.svg"
+						alt=""
+						srcset=""
+					/>
+				</li>
+				<li>
+					<div>Lorem ipsum dolor sit amet consectetur.</div>
+					<img
+						src="./assets/Icons/frame-landscape.svg"
+						alt=""
+						srcset=""
+					/>
+				</li>
+				<li>
+					<div>Lorem ipsum dolor sit amet consectetur.</div>
+					<img
+						src="./assets/Icons/frame-landscape.svg"
+						alt=""
+						srcset=""
+					/>
+				</li>
+				<li>
+					<div>Lorem ipsum dolor sit amet consectetur.</div>
+					<img
+						src="./assets/Icons/frame-landscape.svg"
+						alt=""
+						srcset=""
+					/>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+			Dimitrios Papazisis
+		</footer>
+	</body>
+</html>

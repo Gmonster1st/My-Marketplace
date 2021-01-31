@@ -1,0 +1,8 @@
+:root {
+	--font-family: "Open Sans";
+	--font-large: 25px;
+	--font-medium: 19px;
+	--font-small: 15px;
+
+	--main-box-shadow: -9px 9px 15px -9px var(--project-black);
+}

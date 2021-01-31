@@ -1,0 +1,146 @@
+#tags,
+#contact-operation,
+#thumbnails {
+	margin-top: 2em;
+}
+
+#info,
+#tags,
+#contact-operation {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+header,
+#contact-operation {
+	text-align: center;
+}
+
+.rendered-item {
+	background: var(--project-skyBlue);
+	padding: 2px;
+	vertical-align: baseline;
+	border-radius: 2px;
+	margin-right: 0.2em;
+}
+#tags span {
+	display: flex;
+}
+
+#tags img {
+	height: 1em;
+	vertical-align: bottom;
+}
+
+#newTag {
+	font-family: var(--font-family);
+	font-size: var(--font-small);
+	border: unset;
+	width: 1em;
+	outline: unset;
+}
+
+#info {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+#info hr {
+	border-color: rgba(0, 0, 0, 0);
+}
+
+#info span {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+#info span:last-child {
+	width: 100%;
+}
+
+#contact-operation button {
+	color: var(--project-navy);
+	background-color: var(--project-skyBlue);
+	width: 6em;
+	height: 1.7em;
+	border-color: var(--project-skyBlue);
+	border-radius: 5px;
+	/* float: right; */
+	/* margin-right: 10%; */
+	margin-left: 10%;
+}
+
+#thumbnails {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 8em 8em 8em;
+}
+
+#thumbnails input {
+	margin: 0;
+	padding: 0;
+	appearance: none;
+}
+
+#thumbnails label {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: var(--main-box-shadow);
+	margin: 5px;
+	height: 5em;
+	width: 5em;
+	margin-bottom: 1.5em;
+}
+
+[type="radio"]:checked + label {
+	--scale-size: 1.1;
+	transform: scale3d(var(--scale-size), var(--scale-size), var(--scale-size));
+	-webkit-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+	-ms-transform: scale3d(
+		var(--scale-size),
+		var(--scale-size),
+		var(--scale-size)
+	);
+}
+
+@media (min-width: 800px) {
+	#info {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#tags {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#info hr {
+		width: 100%;
+	}
+
+	#info span {
+		width: inherit;
+	}
+
+	#info span:last-child {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	#thumbnails {
+		grid-template-columns: 8em 8em 8em 8em 8em 8em;
+	}
+}
